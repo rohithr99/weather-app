@@ -1,0 +1,85 @@
+body{
+    height: 100vh;
+    background-image: url("./img/mario-dobelmann-_cmTcArvUFY-unsplash.jpg");
+    background-size:cover;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    background: #000000d0;
+    margin-top: 10vh;
+    border-radius: 10px;
+    width: 30%;
+    height:fit-content;
+}
+.search-container{
+    font-size: 1.6rem;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.search-container > input{
+    width: 90%;
+    background: #7c7c7c2b;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+.search-container > button{
+    border-radius: 50%;
+    border: none;
+    background: #7c7c7c2b;
+    color: white;
+    height: 45px;
+    width: 45px;
+}
+#result{
+color: white;
+}
+.mainHeading{
+    font-family: 'Ubuntu', sans-serif;
+}
+.temp > h1{
+    display: inline;
+}
+.headingTemp{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+}
+.grid-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+@media(max-width:480px)  {
+    html{
+        font-size: 12px;
+    }
+    .main{
+        width:90%;
+    }
+    .grid-box{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .search-container > input{
+        font-size: 1.5rem;
+    }
+ }
+@media (min-width:481px) and (max-width:767px)  {
+    .main{
+        width: 80%;
+    } 
+}
+@media (min-width:768px) and (max-width:1300px) {
+    .main{
+        width: 60%;
+    }
+}
+@media(min-width:1301px){
+    .main{
+        width: 40%;
+    }
+}
